@@ -1,0 +1,112 @@
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Flask App</title>
+</head>
+<body>
+    <h1>OpenAI Flask App</h1>
+
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <label for="file">Upload PDF:</label>
+        <input type="file" name="file" accept=".pdf">
+        <br><br> -->
+
+        <!-- Add this to your form -->
+        <!-- <label for="user_prompt">Enter a prompt related to the content:</label>
+        <input type="text" id="user_prompt" name="user_prompt">
+        <br>
+        <small>For example: "Summarize the main points in the document."</small>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if pdf_content %}
+        <h2>PDF Content:</h2>
+        <p>{{ pdf_content }}</p>
+    {% endif %}
+
+    {% if user_prompt %}
+        <h2>User Prompt:</h2>
+        <p>{{ user_prompt }}</p>
+    {% endif %}
+
+    {% if answer %}
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Flask App</title>
+</head>
+<body>
+    <h1>OpenAI Flask App</h1>
+
+    <div>
+        <h2>PDF Content:</h2>
+        <p>{{ pdf_content }}</p>
+    </div>
+
+    <div>
+        <h2>User Prompt:</h2>
+        <p>{{ user_prompt }}</p>
+    </div>
+
+    <div>
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Flask App</title>
+</head>
+<body>
+    <h1>OpenAI Flask App</h1>
+
+    <div>
+        <h2>PDF Content:</h2>
+        <p>{{ pdf_content }}</p>
+    </div>
+
+    <form method="POST" action="/">
+        <div>
+            <label for="user_prompt">Enter your question:</label>
+            <input type="text" id="user_prompt" name="user_prompt">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Ask Question">
+        </div>
+    </form>
+
+    <div>
+        <h2>User Prompt:</h2>
+        <p>{{ user_prompt }}</p>
+    </div>
+
+    <div>
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    </div>
+</body>
+</html>
